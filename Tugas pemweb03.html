@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahasiswa Sistem Informasi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #eef2f6;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #0a2a66, #1c4e96);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+    }
+
+    /* KONTEN */
+    .container {
+      background: white;
+      margin: 25px auto;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 750px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1c4e96;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "📘";
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #1c4e96;
+      color: white;
+    }
+
+    tfoot td {
+      font-weight: bold;
+      background-color: #e3e9f5;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a2a66;
+      color: white;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Mahasiswa Sistem Informasi</h1>
+    <p>💻 Jago IT • Suka Koding • Berkarakter 🌱</p>
+  </header>
+
+  <!-- HTML Images -->
+  <div class="container">
+    <h2>HTML Images</h2>
+    <p>Tag <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar + dijadikan tautan. Contohnya:</p>
+
+    <a href="https://unsplash.com" target="_blank">
+      <img src="https://images.unsplash.com/photo-1612831455544-1ce92a0d11a0?auto=format&fit=crop&w=900&q=80" alt="Setup komputer modern">
+    </a>
+
+    <p> Contoh <strong>gambar animasi (GIF)</strong>:</p>
+    <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="kucing mengetik cepat">
+
+    <p>Dan berikut penerapan <strong></<code>&lt;picture&gt;</code></strong> element:</p>
+    <picture>
+      <source media="(max-width:600px)" srcset="https://placekitten.com/400/300">
+      <source media="(min-width:601px)" srcset="https://placekitten.com/800/600">
+      <img src="https://placekitten.com/800/600" alt="Kucing lucu">
+    </picture>
+  </div>
+
+  <!-- IMAGE MAP -->
+  <div class="container">
+    <h2>Image Map</h2>
+    <p>Kita bisa membuat gambar yang memiliki area klik berbeda-beda:</p>
+
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" usemap="#mapku" alt="Meja kerja">
+    <map name="mapku">
+      <area shape="rect" coords="150,150,400,350" href="https://www.google.com" target="_blank" alt="Laptop">
+      <area shape="circle" coords="650,400,80" href="https://www.youtube.com" target="_blank" alt="Cangkir Kopi">
+    </map>
+
+    <p>➡️ Coba klik bagian komputer atau cangkir kopi di gambar di atas!</p>
+  </div>
+
+  <!-- HTML TABLES -->
+  <div class="container">
+    <h2>HTML Tables</h2>
+    <p>Tabel digunakan untuk menampilkan data dalam baris dan kolom:</p>
+
+    <table>
+      <thead>
+        <tr>
+          
+          <th>Nama</th>
+          <th>NIM</th>
+          <th>Minat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ika</td>
+          <td>01102670</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>Ratu</td>
+          <td>0110125036</td>
+          <td>UI/UX Design</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Jumlah Mahasiswa Aktif: 2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <!-- HTML LISTS -->
+  <div class="container">
+    <h2>HTML Lists</h2>
+    <p><strong>Unordered List (daftar tanpa urutan):</strong></p>
+    <ul>
+      <li>Analisis Sistem</li>
+      <li>Desain Database</li>
+      <li>Pemrograman Web</li>
+    </ul>
+
+    <p><strong>Ordered List (daftar berurutan):</strong></p>
+    <ol>
+      <li>Belajar HTML</li>
+      <li>Belajar CSS</li>
+      <li>Belajar JavaScript</li>
+    </ol>
+
+    <p><strong>Description List:</strong></p>
+    <dl>
+      <dt><b>HTML</b></dt>
+      <dd>Bahasa untuk membuat struktur web.</dd>
+      <dt><b>CSS</b></dt>
+      <dd>Bahasa untuk memperindah tampilan web.</dd>
+      <dt><b>JavaScript</b></dt>
+      <dd>Bahasa untuk membuat web menjadi interaktif.</dd>
+    </dl>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 STT Nurul Fikri — Jago IT, Berkarakter
+  </footer>
+</body>
+</html>
