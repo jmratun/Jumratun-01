@@ -1,0 +1,50 @@
+0 {
+  font-family: Arial, sagesa Segoe UI;
+  background: #f4f7f7;
+  padding: 20px;
+  text-align: justify;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1,h2{
+  margin-top: 20px;
+}
+
+.box { 
+  width: 200px;
+  padding: 10px;
+  border:4px solid ; #adfe
+  margin: 10px 0;
+  background: #acf;
+}
+
+  .float-img{
+  float: right;
+  width: 240px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  }
+  
+  float-img {
+   float: right;
+   width: 140px;
+   height: auto;
+   margin: 10px;
+   border-radius: 8px;
+}
+.clear-fix::after
+{
+  contain: "";
+  display: block;
+  clear: both;
+}
+
+}
